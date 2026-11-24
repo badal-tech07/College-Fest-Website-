@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFest 2027 | Home</title>
+  <style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #252525; background: #f4f6f8; }
+header { background: #183153; color: white; text-align: center; padding: 22px 12px; }
+header h1 { margin: 0; }
+header p { margin: 4px 0 14px; }
+nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+nav a { color: white; text-decoration: none; padding: 7px 12px; border-radius: 4px; }
+nav a:hover { background: #315780; }
+main { width: min(1000px, 92%); margin: 24px auto; }
+section { background: white; margin-bottom: 20px; padding: 22px; border-radius: 8px; box-shadow: 0 2px 8px #00000012; }
+h2 { color: #183153; margin-top: 0; }
+.hero img { display: block; width: 100%; max-height: 360px; object-fit: cover; border-radius: 6px; margin-top: 15px; }
+video { max-width: 100%; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+th, td { border: 1px solid #cbd2d9; padding: 11px; text-align: left; }
+th { background: #e7eef6; }
+form { display: grid; gap: 8px; }
+input:not([type="radio"]):not([type="checkbox"]), select, textarea { width: 100%; padding: 10px; border: 1px solid #aeb8c2; border-radius: 4px; font: inherit; }
+.form-label { font-weight: bold; margin: 10px 0 0; }
+.inline { display: inline-flex; align-items: center; gap: 7px; margin-right: 12px; }
+button { width: fit-content; background: #183153; color: white; border: 0; padding: 11px 18px; border-radius: 4px; cursor: pointer; font: inherit; margin-top: 10px; }
+button:hover { background: #315780; }
+.small { color: #626b75; font-size: 0.9rem; }
+footer { text-align: center; padding: 15px; background: #183153; color: white; }
+@media (max-width: 600px) { section { padding: 16px; } nav { gap: 3px; } nav a { padding: 7px; } }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TechFest 2027</h1>
+    <p>Explore • Create • Innovate</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="register.html">Register</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to TechFest 2027</h2>
+      <p>Our college is organizing TechFest 2027, a festival where students can show their talent, learn new things and enjoy different activities.</p>
+      <p><strong>Date:</strong> 15–16 February 2027</p>
+      <p><strong>Venue:</strong> College Campus, Main Auditorium</p>
+      <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1000" alt="Students attending a college event">
+    </section>
+
+    <section>
+      <h2>About the Festival</h2>
+      <p>TechFest includes coding, quizzes, gaming, project displays and creative activities. Students from different departments are welcome to participate.</p>
+      <h3>Festival teaser</h3>
+      <video controls width="480">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+      <p class="small">Sample video used for the HTML media-element requirement.</p>
+    </section>
+  </main>
+
+  <footer><p>© 2027 TechFest | Made by a student</p></footer>
+</body>
+</html>
