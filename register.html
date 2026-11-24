@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFest 2027 | Registration</title>
+  <style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #252525; background: #f4f6f8; }
+header { background: #183153; color: white; text-align: center; padding: 22px 12px; }
+header h1 { margin: 0; }
+header p { margin: 4px 0 14px; }
+nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+nav a { color: white; text-decoration: none; padding: 7px 12px; border-radius: 4px; }
+nav a:hover { background: #315780; }
+main { width: min(1000px, 92%); margin: 24px auto; }
+section { background: white; margin-bottom: 20px; padding: 22px; border-radius: 8px; box-shadow: 0 2px 8px #00000012; }
+h2 { color: #183153; margin-top: 0; }
+.hero img { display: block; width: 100%; max-height: 360px; object-fit: cover; border-radius: 6px; margin-top: 15px; }
+video { max-width: 100%; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+th, td { border: 1px solid #cbd2d9; padding: 11px; text-align: left; }
+th { background: #e7eef6; }
+form { display: grid; gap: 8px; }
+input:not([type="radio"]):not([type="checkbox"]), select, textarea { width: 100%; padding: 10px; border: 1px solid #aeb8c2; border-radius: 4px; font: inherit; }
+.form-label { font-weight: bold; margin: 10px 0 0; }
+.inline { display: inline-flex; align-items: center; gap: 7px; margin-right: 12px; }
+button { width: fit-content; background: #183153; color: white; border: 0; padding: 11px 18px; border-radius: 4px; cursor: pointer; font: inherit; margin-top: 10px; }
+button:hover { background: #315780; }
+.small { color: #626b75; font-size: 0.9rem; }
+footer { text-align: center; padding: 15px; background: #183153; color: white; }
+@media (max-width: 600px) { section { padding: 16px; } nav { gap: 3px; } nav a { padding: 7px; } }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Event Registration</h1>
+    <nav>
+      <a href="index.html">Home</a><a href="events.html">Events</a><a href="schedule.html">Schedule</a><a href="register.html">Register</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="form-section">
+      <h2>Student Details</h2>
+      <p>Fill in the form to show your interest in TechFest 2027.</p>
+      <form action="#" method="get">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" required>
+
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+          <option value="">Select department</option>
+          <option>Computer Science</option><option>Information Technology</option><option>Commerce</option><option>Other</option>
+        </select>
+
+        <p class="form-label">Year of Study</p>
+        <label class="inline"><input type="radio" name="year" value="1st Year" required> 1st Year</label>
+        <label class="inline"><input type="radio" name="year" value="2nd Year"> 2nd Year</label>
+        <label class="inline"><input type="radio" name="year" value="3rd Year"> 3rd Year</label>
+
+        <p class="form-label">Events Interested In</p>
+        <label class="inline"><input type="checkbox" name="events" value="Code Sprint"> Code Sprint</label>
+        <label class="inline"><input type="checkbox" name="events" value="Tech Quiz"> Tech Quiz</label>
+        <label class="inline"><input type="checkbox" name="events" value="Gaming Challenge"> Gaming Challenge</label>
+        <label class="inline"><input type="checkbox" name="events" value="Project Display"> Project Display</label>
+        <label class="inline"><input type="checkbox" name="events" value="Web Design"> Web Design</label>
+
+        <label for="message">Any Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write here..."></textarea>
+        <button type="submit">Submit Registration</button>
+      </form>
+      <p class="small">Demo form only: it does not save or send registrations because this project has no backend.</p>
+    </section>
+  </main>
+  <footer><p>© 2027 TechFest</p></footer>
+</body>
+</html>

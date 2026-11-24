@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFest 2027 | Events</title>
+  <style>
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #252525; background: #f4f6f8; }
+header { background: #183153; color: white; text-align: center; padding: 22px 12px; }
+header h1 { margin: 0; }
+header p { margin: 4px 0 14px; }
+nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+nav a { color: white; text-decoration: none; padding: 7px 12px; border-radius: 4px; }
+nav a:hover { background: #315780; }
+main { width: min(1000px, 92%); margin: 24px auto; }
+section { background: white; margin-bottom: 20px; padding: 22px; border-radius: 8px; box-shadow: 0 2px 8px #00000012; }
+h2 { color: #183153; margin-top: 0; }
+.hero img { display: block; width: 100%; max-height: 360px; object-fit: cover; border-radius: 6px; margin-top: 15px; }
+video { max-width: 100%; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+th, td { border: 1px solid #cbd2d9; padding: 11px; text-align: left; }
+th { background: #e7eef6; }
+form { display: grid; gap: 8px; }
+input:not([type="radio"]):not([type="checkbox"]), select, textarea { width: 100%; padding: 10px; border: 1px solid #aeb8c2; border-radius: 4px; font: inherit; }
+.form-label { font-weight: bold; margin: 10px 0 0; }
+.inline { display: inline-flex; align-items: center; gap: 7px; margin-right: 12px; }
+button { width: fit-content; background: #183153; color: white; border: 0; padding: 11px 18px; border-radius: 4px; cursor: pointer; font: inherit; margin-top: 10px; }
+button:hover { background: #315780; }
+.small { color: #626b75; font-size: 0.9rem; }
+footer { text-align: center; padding: 15px; background: #183153; color: white; }
+@media (max-width: 600px) { section { padding: 16px; } nav { gap: 3px; } nav a { padding: 7px; } }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Events</h1>
+    <nav>
+      <a href="index.html">Home</a><a href="events.html">Events</a><a href="schedule.html">Schedule</a><a href="register.html">Register</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Choose an Event</h2>
+      <p>There are activities for students with different interests. Check the details before registering.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Event</th><th>Date</th><th>Time</th><th>Venue</th><th>Fee</th></tr></thead>
+          <tbody>
+            <tr><td>Code Sprint</td><td>15 Feb</td><td>10:00 AM</td><td>Computer Lab</td><td>₹50</td></tr>
+            <tr><td>Tech Quiz</td><td>15 Feb</td><td>11:30 AM</td><td>Room 204</td><td>₹30</td></tr>
+            <tr><td>Gaming Challenge</td><td>15 Feb</td><td>2:00 PM</td><td>Seminar Hall</td><td>₹50</td></tr>
+            <tr><td>Project Display</td><td>16 Feb</td><td>10:00 AM</td><td>Main Hall</td><td>Free</td></tr>
+            <tr><td>Web Design</td><td>16 Feb</td><td>1:00 PM</td><td>Computer Lab</td><td>₹40</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section>
+      <h2>Event Details</h2>
+      <h3>Code Sprint</h3><p>Solve basic programming problems within the given time.</p>
+      <h3>Tech Quiz</h3><p>Answer questions about computers, science and technology.</p>
+      <h3>Gaming Challenge</h3><p>Take part in a friendly gaming competition.</p>
+      <h3>Project Display</h3><p>Show your working model or college project to visitors.</p>
+      <h3>Web Design</h3><p>Create a simple web page using HTML and CSS.</p>
+    </section>
+  </main>
+  <footer><p>© 2027 TechFest</p></footer>
+</body>
+</html>
